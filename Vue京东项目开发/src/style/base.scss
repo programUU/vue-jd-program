@@ -1,0 +1,20 @@
+html{
+    font-size: 100px;
+}
+
+/* 用 rem 代表大小 */
+/* 1rem 等于 浏览器字体大小 */
+
+body{
+    font-size: .12rem;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: none;
+}
+a{
+    text-decoration: none;
+}

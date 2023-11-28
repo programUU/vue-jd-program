@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+  <title>
+    <%= htmlWebpackPlugin.options.title %>
+  </title>
+  <script>
+    /* 已进入浏览器就知道当前设备宽度 */
+    var width = document.documentElement.clientWidth || document.body.clientWidth;
+    /* 当前的设备与开发网页默认比例 */
+    var ratio = ( width / 375);
+    /* 新的fontsize */
+    var fontSize = 100 * ratio; 
+    document.getElementsByTagName('html')[0].style['fontSize'] = fontSize + 'px';
+  </script>
+</head>
+
+<body>
+  <noscript>
+    <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled.
+        Please enable it to continue.</strong>
+  </noscript>
+  <div id="app"></div>
+  <!-- built files will be auto injected -->
+</body>
+
+</html>

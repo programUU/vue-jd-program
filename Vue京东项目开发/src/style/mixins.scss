@@ -1,0 +1,8 @@
+/* 代码复用 */
+@mixin ellipse{
+    /* 多行文字省略效果 */
+    overflow: hidden;
+    /* 不换行 */
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
